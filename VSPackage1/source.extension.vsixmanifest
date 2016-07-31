@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Id="766c0aa5-4043-4901-a5a2-cb32de076b36" Version="1.0" Language="en-US" Publisher="N,Yoshimura" />
+    <DisplayName>AddRegion Utility</DisplayName>
+    <Description xml:space="preserve">add region utility
+select your code you want to circle round by region,after push AddRegion.
+more effective,register shortcut for AddRegion.
+</Description>
+    <Icon>addregion_icon.png</Icon>
+    <PreviewImage>addregion_preview.png</PreviewImage>
+  </Metadata>
+  <Installation InstalledByMsi="false">
+    <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[11.0,]" />
+    <InstallationTarget Version="[11.0,]" Id="Microsoft.VisualStudio.Premium" />
+    <InstallationTarget Version="[11.0,]" Id="Microsoft.VisualStudio.Ultimate" />
+    <InstallationTarget Version="[11.0,]" Id="Microsoft.VisualStudio.VSWinExpress" />
+    <InstallationTarget Version="[11.0,]" Id="Microsoft.VisualStudio.VPDExpress" />
+    <InstallationTarget Version="[11.0,]" Id="Microsoft.VisualStudio.VWDExpress" />
+    <InstallationTarget Version="[11.0,]" Id="Microsoft.VisualStudio.VSLS" />
+    <InstallationTarget Version="[11.0,]" Id="Microsoft.VisualStudio.VSWinDesktopExpress" />
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="4.5" />
+    <Dependency Id="Microsoft.VisualStudio.MPF.11.0" DisplayName="Visual Studio MPF 11.0" d:Source="Installed" Version="11.0" />
+  </Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
+  </Assets>
+</PackageManifest>
